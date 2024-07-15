@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="Javascript" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Mi portafolio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logotipo">
+            <img src="img/logo.png"/><p class="titulo" href="#" alt="Logo de portafolio">Yully Almeida</p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#seccion1">Sobre mí</a></li>
+                <li><a href="#seccion2">Skills</a></li>
+                <li><a href="#seccion3">Formación</a></li>
+                <li><a href="#seccion4">Proyectos</a></li>
+                <li><a href="#seccion5">contacto@psyullyalmeida.com</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="principal">
+
+            <div class="seccion_foto">
+                <section class="parrafo_bienvenida">
+                    <h1>Hola, mi nombre es Yully y construyo paginas web</h1>
+                    <p>Soy formada en el SENA y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
+                    <ul>
+                        <li><a href="https://github.com/Yllit11">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/yully-almeida-516000259/">Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/psyullyalmeida?igsh=ODRiOGc3OTlrcjhr">Instagram</a></li>
+                    </ul>
+                </section>
+                <img src="img/you.png"/>
+            </div>
+
+            <div id="seccion1" class="seccion_sobre">
+                <img src="img/staMa.png"/>
+                <section class="sobre_mi">
+                    <h2>Sobre mí</h2>
+                    <p>Soy nacida en el hermoso país de Colombia, en Sudamérica. Estudié varias disciplinas amtes de encontrar lo que realmente me gusta, el desarrollo web. Es curioso, cuando das con algo que te satisface, empiezas a trabajar en ello y no paras.</p>
+                </section>
+            </div>
+
+            <div id="seccion2" class="seccion_skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>
+                        <img src="img/htm.png"/>
+                        <h3>HTML</h3>
+                    </li>
+                    <li>
+                        <img src="img/cs.png"/>
+                        <h3>CSS</h3>
+                    </li>
+                    <li>
+                        <img src="img/j.png"/>
+                        <h3>JavaScript</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="seccion_banner">
+               
+            </div>
+
+            <div id="seccion3" class="seccion_formacion">
+                <h2>Formación académica</h2>
+                <ul>
+                    <li><a href="https://zajuna.sena.edu.co/" target="_blank">
+                        <img src="img/sena.png"/>
+                        <h3>SENA</h3></a>
+                    </li>
+                    <li><a href="https://app.aluracursos.com/" target="_blank">
+                        <img src="img/alura.png"/>
+                        <h3>AluraLatam</h3></a>
+                    </li>
+                    <li><a href="https://latinascodecamp.thinkific.com/users/sign_in" target="_blank">
+                        <img src="img/latinas.png"/>
+                        <h3>Technolatinas</h3></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="seccion4" class="seccion_proyectos">
+                <h2>Proyectos realizados</h2>
+                <ul>
+                    <li><a href="#">
+                        <h3>Barbería Alura</h3></a>
+                        <div class="boton">
+                            <button><a href="https://github.com/Yllit11" target="_blank">Repositorio</a></button>
+                            <button>Ver demo</button>
+                        </div>
+                    </li>
+                    <li><a href="#">
+                        <h3>Práctica Technolatinas</h3></a>
+                        <div class="boton">
+                            <button><a href="https://github.com/Yllit11" target="_blank">Repositorio</a></button>
+                            <button>Ver demo</button>
+                        </div>
+                    </li>
+                    <li><a href="#">
+                        <h3>AluraGeek</h3></a>
+                        <div class="boton">
+                            <button><a href="https://github.com/Yllit11" target="_blank">Repositorio</a></button>
+                            <button>Ver demo</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="seccion5" class="seccion_contacto">
+                <section class="contacto">
+                    <h2>Contáctame</h2>
+                    <form class="formulario" id="formcontacto">
+                        <input type="text" id="name" name="name" required placeholder="Tú nombre*" />
+                        <input type="email" id="email" name="email" required placeholder="Email*" />
+                        <input type="tel" id="phone" name="phone" required placeholder="Teléfono*" />  
+                        <textarea id="message" name="message" cols="5" rows="5" required placeholder="Mensaje*"></textarea>
+                        <div class="botones">
+                            <button type="submit">Enviar al correo</button>
+                            <button type="button" id="whatsappButton">Enviar por Whatsapp</button>
+                        </div>
+                    </form>
+                </section>
+                <img src="img/css.jpg" alt="Foto de @pankajpatel Pankaj Patel en unsplash.com Unsplash"/>
+            </div>
+
+        </div>            
+
+    </main>
+
+    <footer class="principal">
+
+        <div class="footer_items">
+            <h1 class="logo" href="#" alt="Logo de AluraGeek">Mi portafolio</h1>
+            <p>Desarrollado por <a class="footer_texto" href="https://github.com/Yllit11">Yllit</a></p>
+            <p>Alura Latam 2024</p>
+        </div>
+    
+    </footer>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

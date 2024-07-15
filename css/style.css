@@ -1,0 +1,883 @@
+html {
+    scroll-behavior: smooth; /* Habilita el scroll suave en todos los navegadores modernos */
+}
+
+body{
+    background-color: #fdfffe;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    z-index: 1000;
+    background-color: #fdfffe;
+    position: fixed;
+}
+
+
+/* Titulo portafolio */
+.logotipo{
+    height: auto;
+    width: auto;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo img{
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.titulo{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    color: #00c5ce;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 3em;
+    padding-left: 15px;
+}
+
+
+/* Menu principal */
+.menu{
+    width: 50%;
+    height: auto;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 5%;
+    color: #004775;
+}
+
+.menu li{
+    display: inline;
+    white-space: nowrap;
+}
+
+.menu li:hover{
+    color: #018bbc;
+}
+
+
+/* Cuerpo */
+main{
+    width: 100%;
+    height: auto;
+    padding-top: 7em;
+}
+
+.principal{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Logo */
+.seccion_foto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 80px 0;
+    padding: 0 50px;
+    gap: 2%;
+}
+
+.seccion_foto img{
+    width: 380px;
+    height: auto;
+}
+
+.parrafo_bienvenida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    color: #004775;
+    gap: 5%;
+}
+
+.parrafo_bienvenida h1{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.parrafo_bienvenida p{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.parrafo_bienvenida ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.parrafo_bienvenida li:hover{
+    color: #00c5ce;
+    text-decoration: underline;
+}
+
+
+
+/* Seccion sonre mi */
+.seccion_sobre{
+    background-color: #018bbc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px 0 0;
+    gap: 4%;
+}
+
+.seccion_sobre img{
+    width: auto;
+    height: 400px;
+}
+
+.sobre_mi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    color: #fdfffe;
+    text-align: center;
+}
+
+.sobre_mi h2{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    padding: 50px 0 30px 0;
+}
+
+.sobre_mi p{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    padding-bottom: 50px;
+}
+
+
+
+/* Seccion skills */
+.seccion_skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 50px;
+    background-image: url(../img/skills.png);
+    background-repeat: no-repeat;
+}
+
+.seccion_skills h2{
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    color: #004775;
+    padding: 10px 0 40px 0;
+}
+
+.seccion_skills ul{
+    width: 100%;
+    display: inherit;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.seccion_skills li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #cce5ea;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.seccion_skills img{
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px #018bbc;
+}
+
+.seccion_skills img:hover{
+    width: 205px;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 3px 3px 0 #018bbc;
+}
+
+.seccion_skills h3{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: #004775;
+}
+
+/* Seccion banner */
+.seccion_banner{
+    width: 100%;
+    background-image: url('../img/code.png');
+    /* Altura de la sección */
+    height: 50vh;
+    /* Crea el efecto de paralaje */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Seccion formacion */
+.seccion_formacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 50px;
+    background-color: #cce5ea;
+    background-image: url(../img/formacion.png);
+    background-repeat: no-repeat;
+}
+
+.seccion_formacion h2{
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    color: #fdfffe;
+    padding: 10px 0 40px 0;
+}
+
+.seccion_formacion ul{
+    width: 100%;
+    display: inherit;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.seccion_formacion li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fdfffe;
+    padding: 20px 0;
+    border-radius: 6px;
+    /* Propiedades usadas para generar el giro del contenedor */
+    transition: transform 0.5s;
+    position: relative;
+}
+
+/* Propiedad usada para especificar los grados de rotación del contenedor */
+.seccion_formacion li:hover {
+    transform: rotate(20deg);
+}
+
+/* Propiedades usadas para evitar o contrarestar el giro en items específicos */
+.seccion_formacion li:hover img, .seccion_formacion li:hover h3{
+    transform: rotate(-20deg);
+}
+
+.seccion_formacion img{
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 3px solid #018bbc;
+    /* Propiedades usadas para evitar que el item gire con el contenedor. Contrarotación suave */
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+.seccion_formacion img:hover{
+    width: 205px;
+    height: auto;
+    border-radius: 7px;
+    border: 4px solid #004775;
+}
+
+.seccion_formacion h3{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: #004775;
+    /* Propiedades usadas para evitar que el item gire con el contenedor. Contrarotación suave */
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+
+/* Seccion proyectos */
+.seccion_proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 50px;
+    background-color: #fdfffe;
+}
+
+.seccion_proyectos h2{
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    color: #018bbc;
+    padding: 10px 0 40px 0;
+}
+
+.seccion_proyectos ul{
+    width: 100%;
+    display: inherit;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.seccion_proyectos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fdfffe;
+    padding: 200px 0;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+}
+
+.seccion_proyectos li:nth-child(1){
+    background-image: url('../img/proBarberia.png');
+}
+
+.seccion_proyectos li:nth-child(2){
+    background-image: url('../img/proTech.png');
+}
+
+.seccion_proyectos li:nth-child(3){
+    background-image: url('../img/proGeek.png');
+}
+
+.seccion_proyectos h3{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    color: #00c5ce;
+    text-shadow: 1px 1px 1px #004775;
+    width: 75%;
+    padding: 50px 10px 20px 10px;
+    margin: 0 auto;
+    background-color: #fdfffee3;
+    border-radius: 5px 5px 0 0;
+}
+
+.seccion_proyectos h3:hover{
+    color: #004775;
+    text-shadow: 1px 1px 2px #00c5ce;
+}
+
+.boton{
+    background-color: #fdfffee3;
+    width: 75%;
+    padding: 0 10px 50px 10px;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+}
+
+.boton button{
+    background-color: #018bbc;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: #fdfffe;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.boton button:hover{
+    background-color: #004775;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+
+
+/* Seccion contacto */
+.seccion_contacto{
+    background-color: #004775;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 50px;
+    gap: 4%;
+}
+
+.seccion_contacto img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contacto{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #004775;
+}
+
+.contacto h2{
+    color: #fdfffe;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    padding: 50px 0 30px 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+    border: none;
+}
+
+.formulario input{
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid #004775;
+    padding-left: 15px;
+}
+
+.formulario textarea{
+    border-radius: 10px;
+    border: 2px solid #004775;
+    padding: 10px 0 0 15px;
+    resize: vertical;
+}
+
+::placeholder{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #018bbc;
+    text-align: left;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botones button{
+    width: 45%;
+    background-color: #cce5ea;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #004775;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.botones button:hover{
+    background-color: #fdfffe;
+    font-size: 22px;
+    color: #004675d2;
+}
+
+
+
+
+/* Pie de página */
+footer{
+    background-image: url('../img/foot.png');
+    background-repeat: repeat;
+    background-color: #004775;
+}
+
+.footer_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.footer_items h1{
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #fdfffe;
+}
+
+.footer_items p{
+    color: #fdfffe;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 5px 0 20px 0;
+}
+
+.footer_texto{
+    font-style: italic;
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        position: relative;
+        padding: 30px;
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logotipo {
+        margin-bottom: 10px;
+    }
+
+    main{
+        padding-top: 1em;
+    }
+
+    .seccion_foto {
+        padding: 10px 30px 50px 30px;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .parrafo_bienvenida {
+        align-items: center;
+        text-align: center;
+    }
+
+    .parrafo_bienvenida h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .parrafo_bienvenida p {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .parrafo_bienvenida ul{
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .seccion_foto img{
+        margin: 0 auto;
+    }
+
+    .seccion_sobre {
+        flex-direction: column;
+        padding: 0 0 40px 0;
+    }
+
+    .seccion_sobre img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .sobre_mi h2{
+        padding: 30px;
+    }
+
+    .sobre_mi p{
+        font-size: 20px;
+        padding: 0 30px 30px 30px;
+    }
+
+    .seccion_skills,
+    .seccion_formacion,
+    .seccion_proyectos{
+        padding: 40px 30px;
+    }
+
+    .seccion_skills ul {
+        flex-direction: column;
+    }
+
+    .seccion_skills li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .seccion_formacion ul {
+        flex-direction: column;
+    }
+
+    .seccion_formacion li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .seccion_proyectos ul {
+        flex-direction: column;
+    }
+
+    .seccion_proyectos li {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 100px 0;
+    }
+
+    .seccion_contacto {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contacto {
+        width: 100%;
+    }
+
+    .botones button {
+        width: 45%;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .botones button:hover{
+        font-size: 19px;
+    }  
+
+    .seccion_contacto img {
+        width: auto;
+        height: 300px;
+        margin-bottom: 40px;
+    }
+  
+}
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    
+    header {
+        padding: 30px 25px;
+    }
+
+    .titulo {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    main{
+        padding-top: 0px;
+    }
+
+    .seccion_foto{
+        margin: 0px;
+        padding: 30px 0 40px 0;
+    }
+
+    .parrafo_bienvenida h1 {
+        font-size: 25px;
+        padding: 0 25px 25px 25px;
+    }
+
+    .parrafo_bienvenida p {
+        font-size: 16px;
+        padding: 0 25px 25px 25px;
+    }
+
+    .parrafo_bienvenida ul{
+        font-size: 14px;
+        gap: 2%;
+        padding: 0 25px 25px 25px;
+    }
+
+    .seccion_foto img{ 
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .seccion_sobre{
+        padding: 0 0 30px 0;
+    }
+
+    .sobre_mi h2 {
+        padding: 40px 25px 5px 25px;
+        font-size: 30px;
+    }
+
+    .sobre_mi p {
+        padding: 20px 25px 40px 25px;
+        font-size: 18px;
+        line-height: 1.1em;
+    }
+
+    .seccion_skills{
+        padding: 30px 25px;
+    }
+
+    .seccion_skills img{
+        width: 180px;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 3px 3px 3px #018bbc;
+    }
+    
+    .seccion_skills img:hover{
+        width: 185px;
+        height: auto;
+        border-radius: 7px;
+        box-shadow: 3px 3px 0 #004775;
+    }
+
+    .seccion_formacion{
+        padding: 30px 25px;
+        background-size: cover;
+    }
+
+    .seccion_formacion img{
+        width: 180px;
+    }
+
+    .seccion_formacion img:hover{
+        width: 185px;
+    }
+
+    .seccion_proyectos{
+        padding: 30px 25px;
+    }
+
+    .seccion_proyectos h3 {
+        padding: 40px 10px 15px 10px;
+        font-size: 18px;
+    }
+
+    .boton{
+        padding: 0 10px 40px 10px;
+    }
+
+    .seccion_skills h2,
+    .seccion_formacion h2,
+    .seccion_proyectos h2 {
+        padding: 40px 25px 30px 25px;
+        font-size: 30px;
+    }
+
+    .seccion_skills h3,
+    .seccion_formacion h3 {
+        padding: 0px 25px 15px 25px;
+        font-size: 18px;
+    }
+
+    .seccion_contacto{
+        padding: 30px 25px 40px 25px;
+    }
+
+    .seccion_contacto img {
+        width: auto;
+        height: 300px;
+    }
+
+    .contacto{
+        padding: 0 0 30px 0;
+    }
+    
+    .contacto h2{
+        padding: 30px 0 10px 0;
+    }
+
+    .formulario{
+        gap: 4%;
+        margin: 20px 0;
+    }
+    
+    .formulario input{
+        height: 25px;
+        padding: 3px 0 3px 10px;
+        font-size: 14px;
+    }
+    
+    .formulario textarea{
+        padding: 10px 0 0 10px;
+    }
+
+    ::placeholder{
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+    
+    .botones button{
+        width: 70%;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .botones button:hover{
+        font-size: 17px;
+    }
+
+}
